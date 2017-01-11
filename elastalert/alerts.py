@@ -784,7 +784,7 @@ class SnsAlerter(Alerter):
         self.sns_topic_arn = self.rule.get('sns_topic_arn', '')
         self.aws_access_key = self.rule.get('aws_access_key', '')
         self.aws_secret_key = self.rule.get('aws_secret_key', '')
-        self.aws_region = self.rule.get('aws_region', 'us-east-1')
+        self.aws_region = self.rule.get('aws_region', 'eu-central-1')
         self.boto_profile = self.rule.get('boto_profile', '')
 
     def create_default_title(self, matches):
